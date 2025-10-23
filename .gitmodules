@@ -1,0 +1,3 @@
+[submodule "dependencies/PSB"]
+	path = dependencies/PSB
+	url = https://github.com/TheRealFirst/PSB
