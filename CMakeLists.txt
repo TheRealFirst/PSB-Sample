@@ -15,7 +15,7 @@ file(GLOB_RECURSE SAMPLE_SOURCES CONFIGURE_DEPENDS
 )
 
 # Create the executable
-add_executable(PSB-Sample ${SAMPLE_SOURCES})
+add_executable(PSB-Sample ${SAMPLE_SOURCES} "src/ApplicationLayer.h" "src/ApplicationLayer.cpp" "src/PSBApp.cpp")
 
 # Link the engine
 target_link_libraries(PSB-Sample PRIVATE PSB)
