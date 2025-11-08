@@ -1,6 +1,7 @@
 #include <Engine.h>
 
 #include "ApplicationLayer.h"
+#include "Core\EntryPoint.h"
 
 namespace PSB
 {
