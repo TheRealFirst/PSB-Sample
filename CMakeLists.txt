@@ -26,10 +26,9 @@ target_include_directories(PSB-Sample
         ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
-# Copy the wgpu runtime DLL/dylib next to the exe/app after build
-PSB_copy_wgpu_runtime(PSB-Sample)
-
 # (Optional) macOS: ensure the app can find the dylib via @loader_path
 if(APPLE)
   set_target_properties(PSB-Sample PROPERTIES BUILD_RPATH "@loader_path")
 endif()
+
+PSB_copy_wgpu_runtime(PSB-Sample)
