@@ -11,8 +11,6 @@ git checkout dev
 cd dependencies/PSB
 git submodule update
 cd ../../
-mkdir build
-cd build
-cmake ..
+cmake -B build
 ```
 
