@@ -9,7 +9,7 @@ cmd:
 git clone https://github.com/TheRealFirst/PSB-Sample --recursive
 git checkout dev
 cd dependencies/PSB
-git submodule update
+git submodule update --init --recursive
 cd ../../
 cmake -B build
 ```
