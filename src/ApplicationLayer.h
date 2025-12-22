@@ -8,5 +8,8 @@ namespace PSB
 	public:
 		ApplicationLayer();
 		~ApplicationLayer() override = default;
+
+		virtual void OnUpdate(Timestep ts) override;
+		virtual void OnEvent(Event& e) override;
 	};
 }
